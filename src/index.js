@@ -3,7 +3,6 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const route = require('./routes/route.js');
 const { default: mongoose } = require('mongoose');
-// const functions = require("firebase-functions")
 const app = express();
 
 app.use(bodyParser.json());
