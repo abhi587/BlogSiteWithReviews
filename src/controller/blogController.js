@@ -166,7 +166,7 @@ const getAllBlogsWithFilter = async function (req, res) {
         if (isValidRequest(requestBody)) {
             return res
                 .status(400)
-                .send({ status: false, message: "data is required in body" });
+                .send({ status: false, message: "data is required in query" });
         }
 
         //if queryParams are present then each key to be validated then only to be added to filterCondition object. on that note filtered blogs to be returened
